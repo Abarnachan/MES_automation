@@ -17,7 +17,7 @@ public class SampleTest {
 		WebDriverManager.chromedriver().browserVersion("102.0.5005.63").setup();
 		WebDriver driver = new ChromeDriver(chromeOptions);
         //Navigate to the demoqa website
-		driver.get("https://www.demoqa.com");
+		driver.get("https://www.demoqa.com");..
 		
 		driver.quit();
 	}*/
