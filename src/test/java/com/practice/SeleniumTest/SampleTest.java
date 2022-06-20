@@ -32,7 +32,7 @@ public class SampleTest {
 		
 		 driver.navigate().to("https://marketing.sqa-io.com/");
 		
-		 driver.findElement(By.xpath("/html/body/app-root/app-signin/div/div/div/form/div[1]/input")).sendKeys("mesadmin@test.com");
+		/*... driver.findElement(By.xpath("/html/body/app-root/app-signin/div/div/div/form/div[1]/input")).sendKeys("mesadmin@test.com");
 		
 	      driver.findElement(By.xpath("/html/body/app-root/app-signin/div/div/div/form/div[2]/input")).sendKeys("fertility");
 	      driver.findElement(By.className("login100-form-btn")).click();
@@ -51,7 +51,7 @@ public class SampleTest {
 	      String TestID = driver.findElement(By.xpath("//*[@id='qcTable']/tbody/tr[1]/td[2]")).getText();
 	      System.out.println(TestID);
 		
-		
+		*/
 		
 		
 	}
