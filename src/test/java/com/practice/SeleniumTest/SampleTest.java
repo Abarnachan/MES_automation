@@ -1,4 +1,5 @@
 package com.practice.SeleniumTest;
+import java.io.File;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -24,7 +25,8 @@ public class SampleTest {
 	@Test
 	public static void createInstance()
 	{
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Vision\\eclipse-workspace\\SeleniumTest\\Webdriver\\chromedriver.exe");
+		String path = new File("Webdriver/chromedriver.exe").getAbsolutePath();
+		System.setProperty("webdriver.chrome.driver", path);
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		
