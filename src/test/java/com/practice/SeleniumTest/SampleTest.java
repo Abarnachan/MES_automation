@@ -35,7 +35,8 @@ public class SampleTest {
 
 		//Go to All QC tests tab, do filter by a batch that I want, and read the data from the first row
 		driver.findElement(By.className("fa-flask")).click();
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.MINUTES);////////////////
+		System.out.println("done");
+		/*driver.manage().timeouts().implicitlyWait(15, TimeUnit.MINUTES);////////////////
 		driver.findElement(By.xpath("//*[@id='leftsidebar']/div/div/ul/li[4]/ul/li[2]/a")).click();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.MINUTES);
 		driver.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
@@ -49,7 +50,7 @@ public class SampleTest {
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.MINUTES);///////////
 		String TestID = driver.findElement(By.xpath("//*[@id='qcTable']/tbody/tr[1]/td[2]")).getText();
 		System.out.println(TestID);
-
+*/
 	}
 }
 
