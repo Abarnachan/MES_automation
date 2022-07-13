@@ -6,8 +6,9 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
-
+import org.openqa.selenium.support.ui.ExpectedConditions;
 public class SampleTest {
 
 	public static WebDriver driver;
@@ -30,10 +31,13 @@ public class SampleTest {
 				.sendKeys("fertility");
 		driver.findElement(By.className("login100-form-btn")).click();
 		System.out.println("Login to the marketing site");
-
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.MINUTES);///////////////
+		
+		//driver.manage().timeouts().implicitlyWait(15, TimeUnit.MINUTES);///////////////
 
 		//Go to All QC tests tab, do filter by a batch that I want, and read the data from the first row
+		WebDriverWait wait = new WebDriverWait(driver, 15);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.className("fa-flask")));
+		
 		driver.findElement(By.className("fa-flask")).click();
 		System.out.println("done");
 		/*driver.manage().timeouts().implicitlyWait(15, TimeUnit.MINUTES);////////////////
