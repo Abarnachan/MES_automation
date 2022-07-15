@@ -39,7 +39,7 @@ public class SampleTest {
 		
 		
 		
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(driver, 20);
 		WebElement element = wait.until(
 		ExpectedConditions.visibilityOfElementLocated(By.className("fa-flask")));
 		driver.findElement(By.className("fa-flask")).click();
