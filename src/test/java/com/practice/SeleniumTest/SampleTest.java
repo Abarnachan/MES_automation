@@ -37,9 +37,8 @@ public class SampleTest {
 
 		//Go to All QC tests tab, do filter by a batch that I want, and read the data from the first ro
 		
-		
-		
-		WebDriverWait wait = new WebDriverWait(driver, 20);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.MINUTES);
+		WebDriverWait wait = new WebDriverWait(driver, 50);
 		WebElement element = wait.until(
 		ExpectedConditions.visibilityOfElementLocated(By.className("fa-flask")));
 		driver.findElement(By.className("fa-flask")).click();
