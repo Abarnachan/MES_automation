@@ -31,7 +31,7 @@ public class SampleTest {
 
 		driver.findElement(By.xpath("/html/body/app-root/app-signin/div/div/div/form/div[2]/input"))
 				.sendKeys("fertility");
-		driver.findElement(By.className("login100-form-btn1")).click();
+		driver.findElement(By.className("login100-form-btn")).click();
 		System.out.println("Login to the marketing site");
 /*
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.MINUTES);///////////////
