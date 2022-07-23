@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-21T17:14:09 IST" name="SampleSuite" finished-at="2022-07-21T17:14:15 IST" duration-ms="5743">
+  <suite started-at="2022-07-23T17:53:03 IST" name="SampleSuite" finished-at="2022-07-23T17:53:26 IST" duration-ms="23766">
     <groups>
     </groups>
-    <test started-at="2022-07-21T17:14:09 IST" name="SampleTest" finished-at="2022-07-21T17:14:15 IST" duration-ms="5743">
+    <test started-at="2022-07-23T17:53:03 IST" name="SampleTest" finished-at="2022-07-23T17:53:26 IST" duration-ms="23766">
       <class name="com.practice.SeleniumTest.SampleTest">
-        <test-method signature="createInstance()[pri:0, instance:com.practice.SeleniumTest.SampleTest@33990a0c]" started-at="2022-07-21T17:14:09 IST" name="createInstance" finished-at="2022-07-21T17:14:15 IST" duration-ms="5718" status="PASS">
+        <test-method signature="createInstance()[pri:0, instance:com.practice.SeleniumTest.SampleTest@33990a0c]" started-at="2022-07-23T17:53:03 IST" name="createInstance" finished-at="2022-07-23T17:53:26 IST" duration-ms="23736" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createInstance -->

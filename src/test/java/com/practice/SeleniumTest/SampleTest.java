@@ -31,34 +31,31 @@ public class SampleTest {
 
 		driver.findElement(By.xpath("/html/body/app-root/app-signin/div/div/div/form/div[2]/input"))
 				.sendKeys("fertility");
-		driver.findElement(By.className("login100-form-btn")).click();
+		driver.findElement(By.className("login100-form-btn1")).click();
 		System.out.println("Login to the marketing site");
+/*
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.MINUTES);///////////////
 
-		// driver.manage().timeouts().implicitlyWait(15,
-		// TimeUnit.MINUTES);///////////////
-
-		// Go to All QC tests tab, do filter by a batch that I want, and read the data
-		// from the first ro
+		// Go to All QC tests tab, do filter by a batch that I want, and read the data from the first row
+		
 
 		// driver.manage().timeouts().implicitlyWait(15, TimeUnit.MINUTES);
 
-		// driver.findElement(By.className("fa-flask")).click();
+		driver.findElement(By.className("fa-flask")).click();
 
-		/*
-		 * driver.manage().timeouts().implicitlyWait(15,
-		 * TimeUnit.MINUTES);//////////////// driver.findElement(By.xpath(
-		 * "//*[@id='leftsidebar']/div/div/ul/li[4]/ul/li[2]/a")).click();
-		 * driver.manage().timeouts().implicitlyWait(15, TimeUnit.MINUTES);
-		 * driver.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
-		 * driver.findElement(By.xpath(
-		 * "/html/body/app-root/app-control-tests/section/div/div[2]/div[2]/div[1]/div[1]/form/div/div[1]/div/input"
-		 * )) .sendKeys("031220"); driver.manage().timeouts().implicitlyWait(15,
-		 * TimeUnit.MINUTES);//////////// driver.findElement(By.xpath(
-		 * "html/body/app-root/app-control-tests/section/div/div[2]/div[2]/div[1]/div[1]/form/div/div[7]/div/button[1]"
-		 * )) .click(); driver.manage().timeouts().implicitlyWait(15,
-		 * TimeUnit.MINUTES);/////////// String TestID =
-		 * driver.findElement(By.xpath("//*[@id='qcTable']/tbody/tr[1]/td[2]")).getText(
-		 * ); System.out.println(TestID);
-		 */
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.findElement(By.xpath("//*[@id=\"leftsidebar\"]/div/div/ul/li[5]/ul/li[2]/a")).click();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+				driver.findElement(By.xpath(
+				"/html/body/app-root/app-control-tests/section/div/div[2]/div[2]/div[1]/div[1]/form/div/div[1]/div/input"))
+				.sendKeys("031220");
+				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.findElement(By.xpath(
+				"html/body/app-root/app-control-tests/section/div/div[2]/div[2]/div[1]/div[1]/form/div/div[7]/div/button[1]"))
+				.click();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		String TestID = driver.findElement(By.xpath("//*[@id='qcTable']/tbody/tr[1]/td[2]")).getText();
+		System.out.println(TestID);
+*/
 	}
 }
